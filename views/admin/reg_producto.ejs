@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+ </html>
+    <html lang="en">
+      <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Desechables y bolsas JEM</title>
+      <link rel="stylesheet" href="../styles/styles.css">
+      
+      <body >        
+        <div class="container">
+           <div class="col-12 text-center"> 
+            <h1>INGRESO DE NUEVO PRODUCTO</h1>
+          </div> 
+          <hr>
+          <div class="jem">
+              <form action="/procesar_registro_productos" method="POST">
+                <div class="row">
+                <div class="col-3 mb-3">
+                  <label for="descripcion" class="form-label">Descripcion</label>
+                  <input type="text" class="form-control" id="descripcion" name="descripcion">
+                </div>
+                <div class="col-3 mb-3">
+                   <label for="referencia" class="form-label">Referencia</label>
+                   <input type="text" class="form-control" id="referencia" name="referencia">
+                </div>
+                      <div class="col-3 mb-3">
+                        <label for="unidadEmpaqueId" class="form-label">Unidad de empaque</label>
+                        <input type="number" class="form-control" id="unidadEmpaqueId" name="unidadEmpaqueId">
+                      </div>
+                      <div class="col-3 mb-3">
+                        <label for="marca" class="form-label">Marca</label>
+                        <input type="text" class="form-control" id="marca" name="marca">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-3 mb-3">
+                        <label for="proveedor" class="form-label">Proveedor</label>
+                        <input type="text" class="form-control" id="proveedor" name="proveedor">
+                      </div>
+                      <div class="col-3 mb-3">
+                        <label for="costoUnd" class="form-label">Costo unidad</label>
+                        <input type="text" class="form-control" id="costoUnd" name="costoUnd">
+                      </div>
+                      <div class="col-3 mb-3">
+                        <label for="utilidadId" class="form-label">Utilidad</label>
+                        <input type="text" class="form-control" id="utilidadId" name="utilidadId">
+                      </div>
+                      <div class="col-3 mb-3">
+                        <label for="precioVenta" class="form-label">Precio venta</label>
+                        <input type="text" class="form-control" id="precioVenta" name="precioVenta">
+                      </div>
+                    </div>
+                   <div class="row">
+                      <div class="col-3 mb-3">
+                        <label for="derivado" class="form-label">Derivado</label>
+                        <input type="text" class="form-control" id="derivado" name="derivado">
+                      </div>
+                   </div>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                  </form>
+                </div>    
+          </div>
+
+          <a href="/">Principal</a>
+
+             <script type="text/javascript" src="../javascript/bootstrap.min.js"></script>
+             <script type="text/javascript" src="../javascript/bootstrap.bundle.min.js"></script>
+             <script type="text/javascript" src="../javascript/index.js"></script> 
+      </body>
+
+    </html> 

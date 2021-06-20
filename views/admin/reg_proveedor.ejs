@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+ </html>
+    <html lang="en">
+      <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Desechables y bolsas JEM</title>
+      <link rel="stylesheet" href="../styles/styles.css">
+      
+      <body >        
+        <div class="container">
+           <div class="col-12 text-center"> 
+            <h1>INGRESO DE NUEVO PROVEEDOR</h1>
+          </div> 
+          <hr>
+          <div class="jem">
+              <form action="/procesar_registro_proveedor" method="POST">
+                <div class="row">
+                <div class="col-3 mb-3">
+                  <label for="descripcion" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre">
+                </div>
+                <div class="col-3 mb-3">
+                   <label for="ciudad" class="form-label">Ciudad</label>
+                   <input type="text" class="form-control" id="ciudad" name="ciudad">
+                </div>
+                      <div class="col-3 mb-3">
+                        <label for="direccion" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="direccion" name="direccion">
+                      </div>
+                      <div class="col-3 mb-3">
+                        <label for="telefono" class="form-label">Telefono</label>
+                        <input type="text" class="form-control" id="telefono" name="telefono">
+                      </div>
+                  </div>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+                  </form>
+                </div>    
+          </div>
+
+          <a href="/">Principal</a>
+
+             <script type="text/javascript" src="../javascript/bootstrap.min.js"></script>
+             <script type="text/javascript" src="../javascript/bootstrap.bundle.min.js"></script>
+             <script type="text/javascript" src="../javascript/index.js"></script> 
+      </body>
+
+    </html> 

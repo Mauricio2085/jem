@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+ </html>
+    <html lang="en">
+      <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Desechables y bolsas JEM</title>
+      <link rel="stylesheet" href="../styles/styles.css">
+      
+      <body >        
+        <div class="container">
+          <div class="row">
+           <div class="col-12 text-center"> 
+            <h1>INGRESO DE NUEVA UTILIDAD</h1>
+          </div> 
+        </div>
+          <hr>
+          <div class="row">
+          <div class="jem col-3">
+              <form action="/procesar_registro_utilidad" method="POST">
+                <div class="row">
+                 <div class="col-12 mb-3">
+                  <label for="porcentaje" class="form-label">Porcentaje</label>
+                  <input type="text" class="form-control" id="porcentaje" name="porcentaje">
+                 </div>
+                </div>
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+              </form>
+          </div>    
+        </div>
+        <div class="row">
+          <div class="col-4
+          " style="margin-top: 20px;">
+            <table class="table table-dark table-striped table-bordered border-light table align-middle" >
+              <thead>
+                <tr>
+                  <th scope="col-10 align-middle">ID</th>
+                  <th scope="col-10 align-middle">PORCENTAJE</th>
+                </tr>
+              </thead>
+            <% utilidades.forEach(utilidades => { %>
+            <tbody>
+              <tr>
+                <th scope="row"><%= utilidades.id %></th>
+                <td><%= utilidades.porcentaje %></td>
+              </tr>
+              <% }) %>
+            </tbody>
+            </table>
+          </div>  
+        </div>
+          <a href="/">Principal</a>
+
+             <script type="text/javascript" src="../javascript/bootstrap.min.js"></script>
+             <script type="text/javascript" src="../javascript/bootstrap.bundle.min.js"></script>
+             <script type="text/javascript" src="../javascript/index.js"></script> 
+      </body>
+
+    </html> 

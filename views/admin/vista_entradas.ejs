@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+ </html>
+    <html lang="en">
+      <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Desechables y bolsas JEM</title>
+      <link rel="stylesheet" href="../styles/styles.css">  
+      </head>
+      <header>
+        <ul class="nav nav-pills">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Nuevos registros</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/registros/productos">Producto</a></li>
+              <li><a class="dropdown-item" href="/registros/marcas">Marca</a></li>
+              <li><a class="dropdown-item" href="/registros/proveedores">Proveedor</a></li>
+              <li><a class="dropdown-item" href="/registros/unidad_empaque">Unidad de empaque</a></li>
+              <li><a class="dropdown-item" href="/registros/utilidades">Utilidad</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Vistas</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/vistas/productos">Productos</a></li>
+              <li><a class="dropdown-item" href="/vistas/entradas">Entradas</a></li>
+              <li><a class="dropdown-item" href="/vistas/ventas">Ventas</a></li>
+              <li><a class="dropdown-item" href="/vistas/proveedores">Proveedores</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/inventario">Entradas inventario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ventas">Ventas</a>
+          </li>
+          </ul>
+      </header>
+
+      <body class="container">
+        
+       
+           <table class="table table-dark table-striped table-bordered border-light table align-middle">
+            <thead>
+              <tr>
+                <th scope="col-10 align-middle">ID</th>
+                <th scope="col-10 align-middle">NO.FACTURA</th>
+                <th scope="col-10">FECHA</th>
+                <th scope="col-10">CANTIDAD</th>
+                <th scope="col-10">PRECIO UNIDAD</th>
+                <th scope="col-10">IVA</th>
+                <th scope="col-10">COSTO TOTAL</th>
+              </tr>
+            </thead>
+            <% entradas.forEach(entradas => { %>
+            <tbody>
+              <tr>
+                <th scope="row"><%= entradas.id %></th>
+                <td><%= entradas.no_factura %></td>
+                <td><%= entradas.fecha.getFullYear() %>-<%= entradas.fecha.getMonth()+1 %>-<%= entradas.fecha.getDate() %></td>
+                <td><%= entradas.cantidad %></td>
+                <td><%= entradas.precio_unidad %></td>
+                  <td><%= entradas.iva %></td>
+                    <td><%= entradas.valor_total %></td>
+              </tr>
+           <% }) %>
+          <a href="/registros/productos">Registro</a>
+                 
+          <script type="text/javascript" src="../javascript/bootstrap.min.js"></script>
+          <script type="text/javascript" src="../javascript/bootstrap.bundle.min.js"></script>
+          <script type="text/javascript" src="../javascript/index.js"></script> 
+
+    </html> 
